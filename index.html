@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Techno Niro | Industrial Automation Solutions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #fff;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+
+nav h1 {
+    color: #38bdf8;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1581091012184-5c2f7c2c8b9f') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: auto;
+}
+
+.btn {
+    margin-top: 20px;
+    display: inline-block;
+    padding: 12px 25px;
+    background: #38bdf8;
+    color: #000;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+/* SECTION */
+section {
+    padding: 80px 50px;
+}
+
+/* SERVICES */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: #334155;
+}
+
+/* CONTACT */
+.contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #020617;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+    .contact {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h1>Techno Niro</h1>
+    <div>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </div>
+</nav>
+
+<section class="hero">
+    <div>
+        <h2>Industrial Automation Experts</h2>
+        <p>Providing advanced hardware and software solutions for control systems, power distribution, and industrial automation projects.</p>
+        <a href="#contact" class="btn">Get Started</a>
+    </div>
+</section>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Techno Niro delivers complete automation solutions tailored to industrial needs. 
+        From consultation and engineering design to installation and maintenance, 
+        we ensure efficient and reliable system performance.
+    </p>
+</section>
+
+<section id="services">
+    <h2>Our Services</h2>
+
+    <div class="services">
+        <div class="card">
+            <h3>Consultation</h3>
+            <p>Understanding project requirements and delivering tailored engineering strategies.</p>
+        </div>
+
+        <div class="card">
+            <h3>Design & Engineering</h3>
+            <p>Custom enclosures, switchgear, and power systems designed for optimal performance.</p>
+        </div>
+
+        <div class="card">
+            <h3>Installation</h3>
+            <p>Professional system setup, cable routing, and commissioning for seamless integration.</p>
+        </div>
+
+        <div class="card">
+            <h3>Support</h3>
+            <p>Ongoing maintenance, diagnostics, and training to ensure long-term efficiency.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <div class="contact">
+        <div>
+            <p><strong>Email:</strong> info@technoniro.ir</p>
+            <p><strong>Phone:</strong> (+98) 31 3377 0311</p>
+            <p><strong>Address:</strong> 414 Imam Khomeini St, Dorcheh, Esfahan Province, 84316-73939</p>
+        </div>
+
+        <div>
+            <iframe 
+                src="https://maps.google.com/maps?q=414%20Imam%20Khomeini%20St%20Dorcheh%20Esfahan&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Techno Niro. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
